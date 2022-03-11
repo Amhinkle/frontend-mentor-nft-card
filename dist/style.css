@@ -1,0 +1,140 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125;
+}
+
+.nft-card {
+  background-color: #0d192b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 394px;
+  color: white;
+  padding: 1.8rem;
+  background-color: #14253d;
+  border-radius: 2rem;
+}
+.card__img {
+  width: 100%;
+  height: 336px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.card__imgimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+}
+.card__img:hover .card__img-preview {
+  opacity: 1;
+}
+.card__img-preview {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 247, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card__img-preview-eye {
+  width: 40px;
+}
+.card__img-preview-eye img {
+  width: 100%;
+}
+
+.cube {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card__container {
+  width: 100%;
+  height: 100%;
+}
+
+.card__heading {
+  font-size: 1.375;
+  padding-bottom: 32px;
+}
+.card__heading:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__description {
+  font-size: 1.125;
+  padding-bottom: 10px;
+  color: #8bacda;
+}
+
+.card__info {
+  font-size: 1.25;
+  display: flex;
+}
+
+.card__price {
+  margin-right: 140px;
+  color: #00fff7;
+  padding-top: 15px;
+}
+.card__price p {
+  float: right;
+}
+
+.card__time {
+  color: #8bacda;
+  padding-top: 15px;
+}
+.card__time p {
+  float: right;
+}
+
+hr.solid {
+  border-bottom: 1px solid #2f415b;
+  opacity: 25%;
+  margin-top: 25px;
+  margin-bottom: 22px;
+}
+
+.card__user {
+  display: flex;
+}
+.card__user img {
+  width: 45px;
+  height: 45px;
+  border: 1.5px solid white;
+  border-radius: 100px;
+}
+.card__user p {
+  padding-left: 25px;
+  padding-top: 10px;
+  color: #8bacda;
+}
+.card__user a {
+  text-decoration: none;
+  color: white;
+}
+.card__user a:hover {
+  color: #00fff7;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
